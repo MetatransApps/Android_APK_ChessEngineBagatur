@@ -7,7 +7,7 @@ import org.metatrans.commons.ads.api.IAdsConfiguration;
 import org.metatrans.commons.ads.api.IAdsConfigurations;
 import org.metatrans.commons.ads.api.IAdsProviders;
 import org.metatrans.commons.ads.impl.IAdsContainer;
-import org.metatrans.commons.ads.impl.providers.home_ads.AdsContainer_HomeAds;
+import org.metatrans.commons.ads.impl.providers.home_ads.AdsContainer_HomeAds_PureC;
 
 
 public class AdsConfigurations_Bagatur implements IAdsConfigurations {
@@ -29,7 +29,7 @@ public class AdsConfigurations_Bagatur implements IAdsConfigurations {
 												IAdsProviders.ID_HOME_ADS,
 											};
 
-		container_home = new AdsContainer_HomeAds(context, getProviderConfiguration(IAdsProviders.ID_HOME_ADS));
+		container_home = new AdsContainer_HomeAds_PureC(context, getProviderConfiguration(IAdsProviders.ID_HOME_ADS));
 	}
 	
 	

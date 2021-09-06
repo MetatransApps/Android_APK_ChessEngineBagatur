@@ -34,6 +34,7 @@ dependencies {
 
     implementation project(":Android_LIB_Commons")
     implementation project(":Android_LIB_CommonsAds")
+    implementation project(":Android_LIB_CommonsAdsHome")
     implementation project(":Android_APP_ChessArtForKids")
     implementation project(":Android_APP_ChessEngineBagatur")
 
