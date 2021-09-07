@@ -10,7 +10,16 @@ import com.bagaturchess.cfg.ads.AdsConfigurations_Bagatur;
 public class Application_Bagatur extends Application_BagaturEngine {
 	
 	
-	private IAdsConfigurations adsConfigurations = new AdsConfigurations_Bagatur(this);
+	private IAdsConfigurations adsConfigurations;
+
+
+	@Override
+	public void onCreate() {
+
+		super.onCreate();
+
+		adsConfigurations = new AdsConfigurations_Bagatur(this);
+	}
 
 	
 	@Override
