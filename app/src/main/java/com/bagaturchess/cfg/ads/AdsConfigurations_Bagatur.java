@@ -7,7 +7,7 @@ import org.metatrans.commons.ads.api.IAdsConfiguration;
 import org.metatrans.commons.ads.api.IAdsConfigurations;
 import org.metatrans.commons.ads.api.IAdsProviders;
 import org.metatrans.commons.ads.impl.IAdsContainer;
-import org.metatrans.commons.ads.impl.providers.home_ads.AdsContainer_HomeAds_PureC;
+import org.metatrans.commons.ads.impl.providers.home_ads.website.AdsContainer_HomeAds_PureC;
 
 
 public class AdsConfigurations_Bagatur implements IAdsConfigurations {
