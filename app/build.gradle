@@ -10,8 +10,8 @@ android {
         applicationId "com.bagaturchess"
         minSdkVersion 23
         targetSdkVersion 30
-        versionCode 118
-        versionName "1.1.8"
+        versionCode 119
+        versionName "1.1.9"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
