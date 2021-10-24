@@ -43,98 +43,83 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-    	<activity
-  			android:name="org.metatrans.commons.menu.Activity_Menu_Colours_Base"
-  			android:icon="@drawable/ic_rainbow"
-  			android:label="@string/menu_colour_scheme"
-  			android:theme="@style/AppBaseTheme">
-  			<intent-filter>
+
+        <activity
+            android:name="org.metatrans.commons.menu.Activity_Menu_Colours_Base"
+            android:icon="@drawable/ic_rainbow"
+            android:label="@string/menu_colour_scheme"
+            android:theme="@style/AppTheme">
+            <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-  		</activity>
-  		
-    	        
-    	<activity
+        </activity>
+
+
+        <activity
             android:name="org.metatrans.commons.engagement.achievements.Activity_Picture"
             android:icon="@drawable/ic_achievements"
             android:label="@string/achievement"
-            android:theme="@style/AppBaseTheme">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <!-- action android:name="android.intent.action.MAIN" /-->
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-    	        
-    	<activity
+
+
+        <activity
             android:name="org.metatrans.commons.engagement.achievements.Activity_Achievements_Base"
             android:icon="@drawable/ic_achievements"
             android:label="@string/achievements"
-            android:theme="@style/AppBaseTheme">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <!-- action android:name="android.intent.action.MAIN" /-->
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-    	
-    	<activity
-            android:name="org.metatrans.commons.engagement.achievements.Activity_Scores"
-            android:icon="@drawable/ic_scores"
-            android:label="@string/scores"
-            android:theme="@style/AppBaseTheme" >
+
+
+        <activity
+            android:name="org.metatrans.commons.marketing.Activity_Marketing_AppList"
+            android:icon="@drawable/ic_colours_tube"
+            android:label="@string/label_moregames"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-    	        
-    	<activity
-  			android:name="org.metatrans.commons.marketing.Activity_Marketing_AppList"
-  			android:icon="@drawable/ic_colours_tube"
-  			android:label="@string/label_moregames"
-  			android:theme="@style/AppBaseTheme">
-  			<intent-filter>
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-  		</activity>
-
 
         <activity
             android:name="org.metatrans.commons.ads.impl.providers.home_ads.website.Activity_Marketing_Website_Pages"
             android:icon="@drawable/ic_colours_tube"
             android:label="@string/label_moregames"
-            android:theme="@style/AppBaseTheme">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-
         <receiver android:name="com.chessartforkids.events.theye.BackgroundReceiver"
             android:enabled="true"
             android:exported="false">
-		    <intent-filter>
-		    	<action android:name="android.intent.action.BOOT_COMPLETED" />
-		    </intent-filter>
-	    </receiver>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
 
         <activity
-  			android:name="org.metatrans.commons.web.Activity_WebView_StatePreservingImpl_With_VideoPlayer"
-  			android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-  			android:hardwareAccelerated="true"
-  			android:theme="@style/AppTheme"/>
-        
+            android:name="org.metatrans.commons.web.Activity_WebView_StatePreservingImpl_With_VideoPlayer"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+            android:hardwareAccelerated="true"
+            android:theme="@style/AppTheme"/>
+
         <activity
             android:name="com.chessartforkids.initial.Activity_Initial"
-            android:label="@string/app_name"
             android:launchMode="singleInstance"
             android:theme="@style/AppTheme" >
             <intent-filter>
@@ -144,7 +129,6 @@
         </activity>
         <activity
             android:name="com.bagaturchess.activities.Activity_Loading_BagaturChess"
-            android:label="@string/app_name"
             android:theme="@style/AppTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -153,7 +137,6 @@
         </activity>
         <activity
             android:name="com.bagaturchess.activities.Activity_Main_BagaturChess"
-            android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" >
             <intent-filter>
@@ -166,7 +149,7 @@
         <activity
             android:name="com.bagaturchess.activities.Activity_MenuMain_BagaturChess"
             android:label="@string/menu_main"
-            android:theme="@style/AppBaseTheme" >
+            android:theme="@style/AppTheme" >
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -176,17 +159,7 @@
             android:name="com.bagaturchess.activities.Activity_MenuPieces_BagaturChess"
             android:icon="@drawable/ic_pieces"
             android:label="@string/pieces_scheme"
-            android:theme="@style/AppBaseTheme" >
-            <intent-filter>
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.chessartforkids.menu.MenuActivity_Colours"
-            android:icon="@drawable/ic_colours"
-            android:label="@string/colour_scheme"
-            android:theme="@style/AppBaseTheme" >
+            android:theme="@style/AppTheme" >
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -196,7 +169,7 @@
             android:name="com.chessartforkids.menu.MenuActivity_Promotion"
             android:icon="@drawable/ic_promotion"
             android:label="@string/promotion"
-            android:theme="@style/AppBaseTheme" >
+            android:theme="@style/AppTheme" >
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -206,7 +179,7 @@
             android:name="com.chessartforkids.menu.MenuActivity_MovingRules"
             android:icon="@drawable/ic_rules"
             android:label="@string/menu_rules_desc"
-            android:theme="@style/AppBaseTheme" >
+            android:theme="@style/AppTheme" >
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -216,7 +189,7 @@
             android:name="com.bagaturchess.activities.Activity_MenuDifficulty_BagaturChess"
             android:icon="@drawable/ic_computer"
             android:label="@string/menu_difficulty_desc"
-            android:theme="@style/AppBaseTheme" >
+            android:theme="@style/AppTheme" >
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -226,7 +199,7 @@
             android:name="com.chessartforkids.menu.MenuActivity_Animation"
             android:icon="@drawable/ic_animation_fast_white"
             android:label="@string/menu_animation_mode"
-            android:theme="@style/AppBaseTheme" >
+            android:theme="@style/AppTheme" >
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
