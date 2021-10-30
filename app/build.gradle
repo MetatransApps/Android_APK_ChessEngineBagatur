@@ -1,57 +1,40 @@
+
 plugins {
+
     id 'com.android.application'
 }
 
 android {
+
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
     defaultConfig {
+
         applicationId "com.bagaturchess"
+
         minSdkVersion 23
         targetSdkVersion 30
+
         versionCode 121
         versionName "1.2.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    signingConfigs {
-
-        release {
-            storeFile file(RELEASE_STORE_FILE)
-            storePassword RELEASE_STORE_PASSWORD
-            keyAlias RELEASE_KEY_ALIAS_CHESSBAGATUR
-            keyPassword RELEASE_KEY_PASSWORD_CHESSBAGATUR
-
-            // Optional, specify signing versions used
-            v1SigningEnabled true
-            v2SigningEnabled true
-        }
-    }
-
     buildTypes {
+
         release {
-            minifyEnabled true
-            shrinkResources true
+
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
         }
     }
 
     compileOptions {
+
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
-    }
-
-    android.applicationVariants.all { variant ->
-        variant.outputs.all {
-            println variant.name
-            if (variant.name.contains("release")) {
-                outputFileName = new File("../../../../../../release", "com.bagaturchess_${variant.versionCode}_ads_home.apk")
-                println outputFileName
-            }
-        }
     }
 }
 
@@ -59,8 +42,7 @@ dependencies {
 
     implementation project(":Android_LIB_Commons")
     implementation project(":Android_LIB_CommonsAds")
-    implementation project(":Android_LIB_CommonsAdsHome")
-    implementation project(":Android_APP_ChessArtForKids")
+    implementation project(":Android_LIB_CommonsChess")
     implementation project(":Android_APP_ChessEngineBagatur")
 
 }

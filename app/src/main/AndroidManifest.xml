@@ -29,6 +29,7 @@
 	
     <application
         android:allowBackup="true"
+        android:largeHeap="true"
         android:icon="@drawable/ic_logo_bagaturchess"
         android:label="@string/app_bagaturchess_name"
         android:theme="@style/AppBaseTheme"
@@ -36,7 +37,7 @@
 
 
         <activity
-            android:name="com.bagaturchess.activities.Activity_EditBoard"
+            android:name="org.metatrans.apps.bagatur.activities.Activity_EditBoard"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
@@ -62,7 +63,6 @@
             android:label="@string/achievement"
             android:theme="@style/AppTheme">
             <intent-filter>
-                <!-- action android:name="android.intent.action.MAIN" /-->
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -75,7 +75,6 @@
             android:label="@string/achievements"
             android:theme="@style/AppTheme">
             <intent-filter>
-                <!-- action android:name="android.intent.action.MAIN" /-->
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -94,41 +93,13 @@
         </activity>
 
         <activity
-            android:name="org.metatrans.commons.ads.impl.providers.home_ads.website.Activity_Marketing_Website_Pages"
-            android:icon="@drawable/ic_colours_tube"
-            android:label="@string/label_moregames"
-            android:theme="@style/AppTheme">
-            <intent-filter>
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <receiver android:name="com.chessartforkids.events.theye.BackgroundReceiver"
-            android:enabled="true"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
-
-        <activity
             android:name="org.metatrans.commons.web.Activity_WebView_StatePreservingImpl_With_VideoPlayer"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
             android:hardwareAccelerated="true"
             android:theme="@style/AppTheme"/>
 
         <activity
-            android:name="com.chessartforkids.initial.Activity_Initial"
-            android:launchMode="singleInstance"
-            android:theme="@style/AppTheme" >
-            <intent-filter>
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.bagaturchess.activities.Activity_Loading_BagaturChess"
+            android:name="org.metatrans.apps.bagatur.activities.Activity_Loading_BagaturChess"
             android:theme="@style/AppTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -136,7 +107,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.bagaturchess.activities.Activity_Main_BagaturChess"
+            android:name="org.metatrans.apps.bagatur.activities.Activity_Main_BagaturChess"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" >
             <intent-filter>
@@ -147,7 +118,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.bagaturchess.activities.Activity_MenuMain_BagaturChess"
+            android:name="org.metatrans.apps.bagatur.activities.Activity_MenuMain_BagaturChess"
             android:label="@string/menu_main"
             android:theme="@style/AppTheme" >
             <intent-filter>
@@ -156,7 +127,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.bagaturchess.activities.Activity_MenuPieces_BagaturChess"
+            android:name="org.metatrans.commons.chess.menu.MenuActivity_Pieces"
             android:icon="@drawable/ic_pieces"
             android:label="@string/pieces_scheme"
             android:theme="@style/AppTheme" >
@@ -166,7 +137,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.chessartforkids.menu.MenuActivity_Promotion"
+            android:name="org.metatrans.commons.chess.menu.MenuActivity_Promotion"
             android:icon="@drawable/ic_promotion"
             android:label="@string/promotion"
             android:theme="@style/AppTheme" >
@@ -176,17 +147,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.chessartforkids.menu.MenuActivity_MovingRules"
-            android:icon="@drawable/ic_rules"
-            android:label="@string/menu_rules_desc"
-            android:theme="@style/AppTheme" >
-            <intent-filter>
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.bagaturchess.activities.Activity_MenuDifficulty_BagaturChess"
+            android:name="org.metatrans.apps.bagatur.activities.Activity_MenuDifficulty_BagaturChess"
             android:icon="@drawable/ic_computer"
             android:label="@string/menu_difficulty_desc"
             android:theme="@style/AppTheme" >
@@ -196,7 +157,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.chessartforkids.menu.MenuActivity_Animation"
+            android:name="org.metatrans.commons.chess.menu.MenuActivity_Animation"
             android:icon="@drawable/ic_animation_fast_white"
             android:label="@string/menu_animation_mode"
             android:theme="@style/AppTheme" >

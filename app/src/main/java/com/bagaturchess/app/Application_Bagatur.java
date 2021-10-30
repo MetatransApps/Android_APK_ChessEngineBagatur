@@ -1,6 +1,7 @@
 package com.bagaturchess.app;
 
 
+import org.metatrans.apps.bagatur.app.Application_BagaturEngine;
 import org.metatrans.commons.ads.api.IAdsConfigurations;
 import org.metatrans.commons.cfg.appstore.IAppStore;
 
