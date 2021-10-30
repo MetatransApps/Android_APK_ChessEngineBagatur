@@ -1,4 +1,2 @@
-1.6.9 (30.10.2021) 
+1.2.1 (30.10.2021) 
 Publish the initial version of Bagatur Chess Engine for Android
-
-
