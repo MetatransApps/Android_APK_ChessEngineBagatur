@@ -1,0 +1,12 @@
+<p>This is the Bagatur Chess Engine with own GUI (graphical user interface). It is not as strong as Stockfish and Komodo, but is strong enough to beat a grandmaster. It has 16 strength levels. From level 5, it shows the search information. The ELO rating is about 2700 and the program has unique playing style. Just to clarify, it is not OEX chess engine and other chess engines cannot be imported into the GUI. In general, the application demonstrates an application of artificial intelligence (AI) into the field of chess.</p>
+<p>Features</p>
+<ol>
+<li>Flipboard function.</li>
+<li>Undo move with "back" button of the device.</li>
+<li>Moving by drag and drop as well as by selecting from and to squares.</li>
+<li>Supports different color palettes and chess pieces sets for different tastes.</li>
+</ol>
+
+<p>Your feedback and/or review is more than welcome.</p>
+
+<p>https://metatransapps.com/bagatur-chess-engine-with-gui-chess-ai/</p>
