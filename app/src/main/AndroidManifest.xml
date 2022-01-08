@@ -32,7 +32,7 @@
         android:largeHeap="true"
         android:icon="@drawable/ic_logo_bagaturchess"
         android:label="@string/app_bagaturchess_name"
-        android:theme="@style/AppBaseTheme"
+        android:theme="@style/AppTheme"
         android:name="com.bagaturchess.app.Application_Bagatur">
 
 
