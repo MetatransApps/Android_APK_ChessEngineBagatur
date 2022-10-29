@@ -1,0 +1,6 @@
+Adding Bagaturs V1 and V2 pieces sets.
+Make piece de-selection possible.
+Add "Don't ask again" checkbox for move sequence override alert.
+Bugfix for pawn promotions.
+
+
