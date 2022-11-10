@@ -6,8 +6,8 @@ include ':Android_LIB_CommonsAds'
 include ':Android_LIB_CommonsChess'
 include ':Android_APP_ChessEngineBagatur'
 
-project(':Android_LIB_Commons').projectDir = new File('./../Android_LIB_Commons/app')
-project(':Android_LIB_CommonsAds').projectDir = new File('./../Android_LIB_CommonsAds/app')
-project(':Android_LIB_CommonsChess').projectDir = new File('./../Android_LIB_CommonsChess/app')
-project(':Android_APP_ChessEngineBagatur').projectDir = new File('./../Android_APP_ChessEngineBagatur/app')
+project(':Android_LIB_Commons').projectDir = new File('./Android_LIB_Commons/app')
+project(':Android_LIB_CommonsAds').projectDir = new File('./Android_LIB_CommonsAds/app')
+project(':Android_LIB_CommonsChess').projectDir = new File('./Android_LIB_CommonsChess/app')
+project(':Android_APP_ChessEngineBagatur').projectDir = new File('./Android_APP_ChessEngineBagatur/app')
 

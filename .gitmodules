@@ -1,0 +1,12 @@
+[submodule "Android_LIB_Commons"]
+	path = Android_LIB_Commons
+	url = https://github.com/MetatransApps/Android_LIB_Commons
+[submodule "Android_LIB_CommonsAds"]
+	path = Android_LIB_CommonsAds
+	url = https://github.com/MetatransApps/Android_LIB_CommonsAds
+[submodule "Android_APP_ChessEngineBagatur"]
+	path = Android_APP_ChessEngineBagatur
+	url = https://github.com/MetatransApps/Android_APP_ChessEngineBagatur
+[submodule "Android_LIB_CommonsChess"]
+	path = Android_LIB_CommonsChess
+	url = https://github.com/MetatransApps/Android_LIB_CommonsChess
