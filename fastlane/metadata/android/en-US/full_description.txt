@@ -1,12 +1,40 @@
-<p>This is the Bagatur Chess Engine with own GUI (graphical user interface). It is not as strong as Stockfish and Komodo, but is strong enough to beat a grandmaster. It has 16 strength levels. From level 5, it shows the search information. The ELO rating is about 2700 and the program has unique playing style. Just to clarify, it is not OEX chess engine and other chess engines cannot be imported into the GUI. In general, the application demonstrates an application of artificial intelligence (AI) into the field of chess.</p>
-<p>Features</p>
+<p>This is the open source Bagatur Chess Engine with its own GUI (graphical user interface).</p>
+<p>It is not as strong as Stockfish, Komodo, AlphaZero and Leela Chess Zero, but is strong enough to beat a grandmaster.</p>
+<p>It has 16 strength levels. From level 5, it could shows the search information.</p>
+<p>The ELO rating is about 3000 and the program has a unique playing style.</p>
+<p>In general, the application demonstrates an application of artificial intelligence (AI) into the domain of chess.</p>
+<p>To clarify, it is not an OEX chess engine and other chess engines cannot be imported into the GUI.</p>
+
+<p>Playing instructions:</p>
 <ol>
+<li>Check the menu and make sure, the strength level is appropriate.</li>
+<li>Select/deselect the Human/Computer buttons for both sides according to with which side you want to play and whether you play against computer or another person.</li>
+<li>Use flip board button to change sides if you play with black.</li>
+<li>Move piece by drag and drop or by selecting from/to squares.</li>
+<li>If you want, you could use the move navigation buttons to go back and forward in the moves sequence.</li>
+<li>It is recommended to check all settings in the menu and make sure you play with the option you like most (e.g. move animation speed, chess pieces set, colors).</li>
+</ol>
+
+<p>Features:</p>
+<ol>
+<li>FEN import/export/share.</li>
+<li>Different modes: Human-Human, Human-Bagatur, Bagatur-Bagatur.</li>
+<li>Different strengths levels.</li>
+<li>The app could show the best moves line as well as the evaluation of the board position produced by Bagatur.</li>
+<li>Navigation of played move's (first, previous, next, last).</li>
 <li>Flipboard function.</li>
-<li>Undo move with "back" button of the device.</li>
 <li>Moving by drag and drop as well as by selecting from and to squares.</li>
 <li>Supports different color palettes and chess pieces sets for different tastes.</li>
 </ol>
 
+<p>Permissions:</p>
+<p>The app uses ACCESS_NETWORK_STATE and INTERNET permsisions, because it shows home ads and they open the default browser on the device, going to one of our other apps' page on the store or on the website of Metatrans Apps.</p>
+<p>To be more precise, if the other app is available on the store, from which the app is downloaded, then opens the app page of the other app on the same store.</p>
+<p>If still the app is not available on the store, then opens the app page on our website.</p>
+<p>The app pages on our website have app demo video on YouTube, so a connection to youtube domain will also be listed in order to visualize the page in the browser.</p>
+<p>Our website is created by WordPress, so connections to other domains could be opened as well for technical purposes (e.g. downloading text fonts css).</p>
+
 <p>Your feedback and/or review is more than welcome.</p>
 
 <p>https://metatransapps.com/bagatur-chess-engine-with-gui-chess-ai/</p>
+
