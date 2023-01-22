@@ -1,0 +1,1 @@
+Offline Schach mit 16 Stärkestufen. Schachengine mit eigener GUI. Schach-KI.

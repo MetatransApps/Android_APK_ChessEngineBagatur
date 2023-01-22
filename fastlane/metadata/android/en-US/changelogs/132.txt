@@ -1,0 +1,1 @@
+Service release - decreasing even more the app crash rate (bugfixing).

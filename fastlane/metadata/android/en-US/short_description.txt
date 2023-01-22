@@ -1,1 +1,1 @@
-The Chess Engine Bagatur 2.2e with 16 strength levels.
+Offline chess play with 16 strength levels. Chess Engine with its own GUI. Chess AI.

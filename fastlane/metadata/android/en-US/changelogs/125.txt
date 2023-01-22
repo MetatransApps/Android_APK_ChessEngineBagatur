@@ -1,0 +1,1 @@
+Stabilizations and improvements after the User Interface changes
