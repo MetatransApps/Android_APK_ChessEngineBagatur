@@ -1,17 +1,15 @@
 package com.bagaturchess.app;
 
 
-import org.metatrans.apps.bagatur.app.Application_BagaturEngine;
-import org.metatrans.commons.ads.api.IAdsConfigurations;
-import org.metatrans.commons.cfg.appstore.IAppStore;
+import com.bagaturchess.cfg.ads.AdsConfiguration_Bagatur;
 
-import com.bagaturchess.cfg.ads.AdsConfigurations_Bagatur;
+import org.metatrans.apps.bagatur.app.Application_BagaturEngine;
+import org.metatrans.commons.ads.api.IAdsProviders;
+import org.metatrans.commons.ads.impl.AdsConfigurations_DynamicImpl;
+import org.metatrans.commons.cfg.appstore.IAppStore;
 
 
 public class Application_Bagatur extends Application_BagaturEngine {
-	
-	
-	private IAdsConfigurations adsConfigurations;
 
 
 	@Override
@@ -19,13 +17,17 @@ public class Application_Bagatur extends Application_BagaturEngine {
 
 		super.onCreate();
 
-		adsConfigurations = new AdsConfigurations_Bagatur(this);
+		getAdsConfigurations().addProviderConfig(
+				IAdsProviders.ID_HOME_ADS,
+				new AdsConfiguration_Bagatur()
+		);
 	}
 
-	
+
 	@Override
-	public IAdsConfigurations getAdsConfigurations() {
-		return adsConfigurations;
+	public AdsConfigurations_DynamicImpl getAdsConfigurations() {
+
+		return (AdsConfigurations_DynamicImpl) super.getAdsConfigurations();
 	}
 
 
