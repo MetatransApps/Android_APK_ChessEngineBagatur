@@ -1,0 +1,1 @@
+Fix rare out of memory issue, which appears on some devices with less memory.
