@@ -1,0 +1,1 @@
+Fix issues on edit board screen: 1) now it is not allowed to click analyze when more than 1 king of the same color are added to the board. 2) Now, when phone's back button is pressed the edit board data is skipped and the last position is set on the board.
